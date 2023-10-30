@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    /* background-image: url(../images/Rectangle\ 8.png); */
+}
+.onBtn{
+    background: linear-gradient(92.56deg, #4C6CDC 9.22%, #00BBC7 99.52%);
+
+}
