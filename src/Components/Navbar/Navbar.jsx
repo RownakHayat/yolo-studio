@@ -21,11 +21,12 @@ function Navbar () {
 
 const backgroundImageStyle = {
   backgroundImage: `url("${navbg}")`,
+ 
 }
 
   return (
     <>
-    <div className="h-screen w-full absolute" 
+    <div className="h-screen w-full bg-cover bg-no-repeat absolute" 
      style={backgroundImageStyle}
      >
    <Disclosure as="nav" className="">
@@ -58,9 +59,10 @@ const backgroundImageStyle = {
                  >
                    {navigation.map((item) => (
                      <a
+                     
                        key={item.name}
                        href={item.href}
-                       className={classNames('font-bold text-xl text-white hover:text-[#1ED2DD]'
+                       className={classNames('font-bold text-xl text-white hover:text-[#1ED2DD] cursor-pointer'
                        )}
                        aria-current={item.current ? 'page' : undefined}
                      
@@ -91,7 +93,7 @@ const backgroundImageStyle = {
              </div>
              </div>
              <div className="onBtn mr-36 mt-10 text-white flex left-10 w-40
-             rounded-md px-6 py-1 shadow-lg">
+             rounded-md px-6 py-1 shadow-lg cursor-pointer">
                 <button>Ongoing event</button>
              </div>
            </div>

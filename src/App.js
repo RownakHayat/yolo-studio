@@ -13,7 +13,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Navbar/>
-        {/* <Outlet/> */}
+        <Outlet/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/all-event' element={<AllEvaent/>} />
