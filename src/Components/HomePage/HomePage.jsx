@@ -5,7 +5,6 @@ import image2 from "../../assest/images/Rectangle 29.png";
 import image3 from "../../assest/images/Rectangle 27.png";
 import DCSCImg from '../../assest/images/Rectangle 26.png'
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";

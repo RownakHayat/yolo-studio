@@ -22,4 +22,6 @@
   .btn_info:hover{
     background: linear-gradient(92.56deg, #4C6CDC 9.22%, #00BBC7 99.52%);
   }
-  
+  .homePage.swiper-wrapper {
+    width: 100%;
+  }

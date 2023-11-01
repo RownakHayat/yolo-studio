@@ -1,20 +1,23 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
+// import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import "../../assest/css/AllEvent.css";
 import evtImg from "../../assest/images/Rectangle 8.png";
 import {FiArrowUpRight} from 'react-icons/fi'
 
-// import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+
+import slider_img from "../../assest/images/Rectangle 8.png";
+import ReactDatePicker from "react-datepicker";
 
 export default function AllEventPage() {
+  const [startDate, setStartDate] = useState(new Date());
+
   return (
     <div className="">
       <div className="">
@@ -28,64 +31,69 @@ export default function AllEventPage() {
             </p>
           </div>
         </div>
-        <div className="">
-          <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            pagination={true}
-            modules={[EffectCoverflow, Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <img src={evtImg} />
-              <div className="">
-                <h4 className="text-[#FFD707] text-lg">
-                  DCSC Event Photography Program
-                </h4>
-                <div className="">
-                  <p>18-10-2023 to 20-10-2023</p>
-                  <button
-                    className="bg-[#216DDE]"
-                  >
-                   <FiArrowUpRight />
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={evtImg} />
-            </SwiperSlide>
-          </Swiper>
+
+        <div className="swiper_container w-full">
+        <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
+      >
+        <SwiperSlide className=" max-w-sm">
+          <img src={slider_img} alt="slide_image" />
+          <div className="">
+            <p className="text-[#FFD707] text-xl font-semibold">DCSC Event PhotographyProgram</p>
+            <div className="">
+            <div className="">
+            <ReactDatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+            </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_img} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_img} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_img} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_img} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_img} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_img} alt="slide_image" />
+        </SwiperSlide>
+
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
         </div>
       </div>
     </div>
