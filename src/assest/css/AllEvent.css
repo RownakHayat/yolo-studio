@@ -9,9 +9,7 @@
   height: 42rem;
   position: relative;
 }
-.swiper-wrapper {
-  width: 20%;
-}
+
 .swiper-3d {
   perspective: 1000px;
 }
