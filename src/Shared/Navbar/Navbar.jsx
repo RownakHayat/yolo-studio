@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import DCSC from '../../assest/images/DCSC 1.png'
  
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/home', current: true },
   { name: 'All Event', href: '/all-event', current: false },
   { name: 'Committee', href: '/committee', current: false },
   { name: 'Gallery', href: '/gallery', current: false },
@@ -59,18 +59,15 @@ const backgroundImageStyle = {
                  >
                    {navigation.map((item) => (
                      <a
-                     
                        key={item.name}
                        href={item.href}
                        className={classNames('font-bold text-xl text-white hover:text-[#1ED2DD] cursor-pointer'
                        )}
                        aria-current={item.current ? 'page' : undefined}
-                     
                      >
                        {item.name}
-                       
                      </a>
-                   ))}
+                   ))} 
                  </div>
                </div>
                <div className="flex flex-shrink-0 items-center">
