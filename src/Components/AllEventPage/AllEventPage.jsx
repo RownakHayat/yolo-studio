@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 import "../../assest/css/AllEvent.css";
 import evtImg from "../../assest/images/Rectangle 8.png";
-import BsArrowUpRight from 'react-icons/bs'
+import {FiArrowUpRight} from 'react-icons/fi'
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
@@ -56,7 +56,7 @@ export default function AllEventPage() {
                   <button
                     className="bg-[#216DDE]"
                   >
-                   <BsArrowUpRight />
+                   <FiArrowUpRight />
                   </button>
                 </div>
               </div>

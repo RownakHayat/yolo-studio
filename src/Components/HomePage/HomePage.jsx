@@ -67,20 +67,21 @@ function HomePage() {
         </div>
       </div>
       <div>
-        <div className=" grid grid-cols-2 gap-10">
-          <div className="m-20">
+        <div className="lg:grid lg:grid-cols-2 gap-10">
+          <div className="m-20 m-sm-5 max-w-sm w-full lg:max-w-full sm:flex ">
             <div className="grid-cols-6">
               <div className="">
                 <div className="">
-                  <h1 className="text-white text-5xl font-semibold">DCSC</h1>
+                  <h1 className="text-white lg:text-5xl font-semibold">DCSC</h1>
                   <div className="bg-white flex justify-evenly py-3 mt-8 px-3 text-black rounded-lg ">
-                    <button className="btn_info rounded-lg px-6 font-bold text-base py-1 hover:text-white">
+                    <button className=" btn_info rounded-lg py-2 px-6 font-bold 
+                    text-base hover:text-white ">
                       About
                     </button>
-                    <button className="btn_info rounded-lg px-6 font-bold text-base py-1 hover:text-white">
-                      Intor
+                    <button className="btn_info rounded-lg px-6 font-bold text-base py-1 hover:text-white  ">
+                      Intormd
                     </button>
-                    <button className="btn_info rounded-lg px-6 font-bold text-base py-1 hover:text-white">
+                    <button className="btn_info rounded-lg px-6 font-bold text-base py-1 hover:text-white ">
                       What we do
                     </button>
                   </div>
