@@ -1,7 +1,7 @@
-import React, { Fragment, useState } from 'react'
+import React from 'react'
 import '../../assest/css/Navbar.css'
 import navbg from '../../assest/images/image 85.png'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Disclosure, Menu} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import DCSC from '../../assest/images/DCSC 1.png'
  

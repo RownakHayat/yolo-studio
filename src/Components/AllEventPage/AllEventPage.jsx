@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../assest/css/AllEvent.css";
 import evtbg from "../../assest/images/image 84.png";
 import evtImg from "../../assest/images/Rectangle 8.png";
@@ -20,7 +20,7 @@ export default function AllEventPage() {
 
   return (
     <div
-      className=" w-full h-screen bg-cover bg-no-repeat"
+      className="w-full h-100%"
       style={backgroundImageStyle}
     >
       <div className="">
@@ -241,7 +241,7 @@ export default function AllEventPage() {
             
           </div>
         </Swiper>
-        <div className="slider-controler">
+        <div className="slider-controler mt-8">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
