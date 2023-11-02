@@ -37,7 +37,7 @@ function HomePage() {
               <SwiperSlide className="rounded-full">
                 <img src={image1} alt="" />
               </SwiperSlide>
-              <SwiperSlide className="rounded-full">
+              <SwiperSlide className="rounded-full "> 
                 <img src={image2} alt="" />
               </SwiperSlide>
               <SwiperSlide className="rounded-full">
@@ -66,7 +66,8 @@ function HomePage() {
         </div>
       </div>
       <div>
-        <div className="lg:grid lg:grid-cols-2 gap-10">
+        <div className="">
+          <div className="lg:grid lg:grid-cols-2 gap-10 py-20 px-20">
           <div className="m-20 m-sm-5 max-w-sm w-full lg:max-w-full sm:flex ">
             <div className="grid-cols-6">
               <div className="">
@@ -108,6 +109,7 @@ function HomePage() {
               <img src={DCSCImg} alt="" className="rounded-lg" />
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

@@ -1,21 +1,22 @@
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
- 
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 25rem; */
+    
   }
   
-  .swiper-slide img {
+  /* .swiper-slide img {
     display: block;
     width: 100%;
     height: 20%;
     object-fit: cover;
   }
+   */
+
   .dcsc-container{
     background: linear-gradient(92.56deg, #041551 9.22%, #0E5E6B 99.52%);
   }
