@@ -18,6 +18,8 @@
 .swiper-slide {
   width: 15%;
   height: 20%;
+  background-color: #1C2069;
+
 }
 @media (max-width: 500px) {
   .swiper_container {

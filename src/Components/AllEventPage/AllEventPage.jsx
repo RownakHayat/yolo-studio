@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import "../../assest/css/AllEvent.css";
 import evtbg from "../../assest/images/image 84.png";
 import evtImg from "../../assest/images/Rectangle 8.png";
-
-import ReactDatePicker from "react-datepicker";
-
+import {BsArrowUpRight} from 'react-icons/bs'
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import "react-datepicker/dist/react-datepicker.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -16,8 +14,6 @@ import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 // import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 export default function AllEventPage() {
-  const [startDate, setStartDate] = useState(new Date());
-
   const backgroundImageStyle = {
     backgroundImage: `url("${evtbg}")`,
   };
@@ -62,39 +58,187 @@ export default function AllEventPage() {
           className="swiper_container"
         >
           <div className="">
-            <SwiperSlide className="">
+            <SwiperSlide className="p-4 rounded-lg">
+              <img src={evtImg} alt="slide_image" className="w-full" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg" >
+              <img src={evtImg} alt="slide_image" className="w-full" />
+              <div className="flex">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">
-                  <h4 className="text-[#FFD707] text-xl flex text-center font-semibold">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
                     DCSC Event Photography Program
                   </h4>
-                  <div className="flex text-white text-lg font-semibold">
-                    <p>First Date</p>
-                    <p>last Date</p>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
                   </div>
                 </div>
-                <button className="bg-[#216DDE] flex mt-auto mb-0 p-2">Icons</button>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
               <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
               <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
               <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
               <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
               <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
               <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
             </SwiperSlide>
+            <SwiperSlide className="p-4 rounded-lg">
+              <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
+            </SwiperSlide>
+            
           </div>
         </Swiper>
         <div className="slider-controler">

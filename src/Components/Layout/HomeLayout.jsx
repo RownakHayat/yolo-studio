@@ -13,8 +13,8 @@ const HomeLayout = () => {
             <Outlet/>
             <Home/>
             <AllEventPage/>
-            <Committee/>
             <Gallery/>
+            <Committee/>
         </div>
     );
 };
