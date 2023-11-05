@@ -20,7 +20,7 @@ export default function AllEventPage() {
 
   return (
     <div
-      className="w-full h-100%"
+      className="w-full h-100% bg-cover bg-no-repeat"
       style={backgroundImageStyle}
     >
       <div className="">
@@ -35,7 +35,7 @@ export default function AllEventPage() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="evt-container">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -57,8 +57,8 @@ export default function AllEventPage() {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container"
         >
-          <div className="">
-            <SwiperSlide className="p-4 rounded-lg">
+          <div className="evt_slider">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg">
               <img src={evtImg} alt="slide_image" className="w-full" />
               <div className="flex ">
                 <div className="">
@@ -76,7 +76,7 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg" >
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg" >
               <img src={evtImg} alt="slide_image" className="w-full" />
               <div className="flex">
                 <div className="">
@@ -94,7 +94,7 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg" >
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">
@@ -112,7 +112,7 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg" >
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">
@@ -130,7 +130,7 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg" >
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">
@@ -148,7 +148,25 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg">
+              <img src={evtImg} alt="slide_image" />
+              <div className="flex ">
+                <div className="">
+                  <h4 className="text-[#FFD707] text-xl font-semibold">
+                    DCSC Event Photography Program
+                  </h4>
+                  <div className="flex gap-2 text-white text-lg font-semibold">
+                    <p>18-10-2023  </p>
+                    <span>to</span>
+                    <p>20-10-2023</p>
+                  </div>className="p-4 bg-[#041551] rounded-lg"
+                </div>
+                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
+                  <BsArrowUpRight />
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg">
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">
@@ -166,7 +184,7 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg">
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">
@@ -184,7 +202,7 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg">
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">
@@ -202,25 +220,7 @@ export default function AllEventPage() {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
-              <img src={evtImg} alt="slide_image" />
-              <div className="flex ">
-                <div className="">
-                  <h4 className="text-[#FFD707] text-xl font-semibold">
-                    DCSC Event Photography Program
-                  </h4>
-                  <div className="flex gap-2 text-white text-lg font-semibold">
-                    <p>18-10-2023  </p>
-                    <span>to</span>
-                    <p>20-10-2023</p>
-                  </div>
-                </div>
-                <button className="bg-[#216DDE] text-white flex mt-auto mb-0 p-2">
-                  <BsArrowUpRight />
-                </button>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="p-4 rounded-lg">
+            <SwiperSlide className="p-4 bg-[#041551] rounded-lg">
               <img src={evtImg} alt="slide_image" />
               <div className="flex ">
                 <div className="">

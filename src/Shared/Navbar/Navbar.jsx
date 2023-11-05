@@ -8,6 +8,7 @@ import DCSC from '../../assest/images/DCSC 1.png'
 const navigation = [
   { name: 'Home', href: '/home', current: true },
   { name: 'All Event', href: '/all-event', current: false },
+  { name: 'All Members', href: '/all-member', current: false },
   { name: 'Committee', href: '/committee', current: false },
   { name: 'Gallery', href: '/gallery', current: false },
 ]

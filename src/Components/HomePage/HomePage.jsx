@@ -22,7 +22,7 @@ function HomePage() {
             <span className="ml-9">SCIENCE CLUB</span>
           </h1>
         </div>
-        <div className="slider">
+        <div className="slider_home">
           <div className="small-container">
             <Swiper
               slidesPerView={3}
@@ -32,12 +32,12 @@ function HomePage() {
               mousewheel={true}
               keyboard={true}
               modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-              className="mySwiper"
+              className="mySwiper_home"
             >
-              <SwiperSlide className="rounded-full">
+              <SwiperSlide className="slider_img rounded-full w-26 ">
                 <img src={image1} alt="" />
               </SwiperSlide>
-              <SwiperSlide className="rounded-full "> 
+              <SwiperSlide className=" "> 
                 <img src={image2} alt="" />
               </SwiperSlide>
               <SwiperSlide className="rounded-full">
