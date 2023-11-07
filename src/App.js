@@ -8,7 +8,6 @@ import Gallery from './Pages/Gallery';
 import Navbar from './Shared/Navbar/Navbar';
 import Main from './Main';
 import HomeLayout from './Components/Layout/HomeLayout';
-import AllMember from './Components/AllMember/AllMember';
 
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
           <Route path='/home' element={<Home/>} />
           <Route path='/all-event' element={<AllEvaent/>} />
           <Route path='/gallery' element={<Gallery/>} />
-          <Route path='/all-member' element={<AllMember/>} />
           <Route path='/committee' element={<Committee/>} />
           
           

@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
-function HomePage() {
+export default function  HomePage() {
   return (
     <div className="bg-[#041551] dcsc-container">
       <div className="">
@@ -117,4 +117,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+

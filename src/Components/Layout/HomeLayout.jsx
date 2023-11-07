@@ -4,21 +4,17 @@ import AllEventPage from '../AllEventPage/AllEventPage';
 import Committee from '../Committee/Committee';
 import Gallery from '../Gallery/Gallery';
 import Main from '../../Main';
-import { Outlet } from 'react-router-dom';
-import AllMember from '../AllMember/AllMember';
+import FooterPage from '../FooterPage/FooterPage';
 
-const HomeLayout = () => {
+export default function  HomeLayout() {
     return (
         <div>
             <Main/>
-            <Outlet/>
             <Home/>
             <AllEventPage/>
             <Gallery/>
-            <AllMember/>
             <Committee/>
+            <FooterPage/>
         </div>
     );
 };
-
-export default HomeLayout;

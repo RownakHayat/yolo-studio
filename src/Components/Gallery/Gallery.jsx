@@ -8,7 +8,7 @@ import gallery5 from "../../assest/images/Rectangle 33 (2).png";
 import gallery6 from "../../assest/images/Rectangle 33 (3).png";
 import gallery7 from "../../assest/images/Rectangle 31 (1).png";
 
-const Gallery = () => {
+export default function  Gallery() {
   return (
     <div className=" w-full h-100% bg-[#041551] ">
       <div className="">
@@ -101,4 +101,3 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;

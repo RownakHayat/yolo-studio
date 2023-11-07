@@ -6,9 +6,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import DCSC from '../../assest/images/DCSC 1.png'
  
 const navigation = [
-  { name: 'Home', href: '/home', current: true },
+
+  { name: 'Home', href: '/home', current: false },
   { name: 'All Event', href: '/all-event', current: false },
-  { name: 'All Members', href: '/all-member', current: false },
   { name: 'Committee', href: '/committee', current: false },
   { name: 'Gallery', href: '/gallery', current: false },
 ]
@@ -43,11 +43,13 @@ const backgroundImageStyle = {
                    <Menu.Button className="">
                      <span className="absolute -inset-1.5" />
                      <span className="sr-only">Open user menu</span>
+                     <a href="/">
                      <img
-                       className="rounded-full w-14 h-16 mt-10"
+                       className="rounded-full  w-34 h-34 mt-20"
                        src={DCSC}
                        alt=""
                      />
+                     </a>
                    </Menu.Button>
                  </div>
                </Menu>
